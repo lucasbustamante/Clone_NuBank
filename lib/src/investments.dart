@@ -21,7 +21,6 @@ class Investments extends StatelessWidget {
           Text('A revolução roxa começou. Invista de maneira simples, '
               'sem burocracias e 100% digital.'),
           SizedBox(height: 20),
-          PurpleButton(),
           SizedBox(height: 20),
         ],
     ),
