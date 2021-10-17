@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/designer/bootstrap_icons.dart';
+import 'package:nubank/designer/card.dart';
+import 'package:nubank/designer/circle_button.dart';
 import 'package:nubank/src/investments.dart';
-import 'package:nubank/src/life_insurance.dart';
+import 'package:nubank/src/insurance.dart';
 import 'account_page.dart';
-import 'package:nubank/designer/icons.dart';
+
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -14,7 +17,8 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(backgroundColor: Color(0xfff0f1f5),
+    return Scaffold(
+      backgroundColor: Color(0xfff0f1f5),
       body: SingleChildScrollView(
         child: Column(
           children: [
@@ -41,11 +45,13 @@ class _HomePageState extends State<HomePage> {
                         SizedBox(
                           width: 130,
                         ),
-                        Icon(Icons.remove_red_eye_outlined, color: Colors.white),
+                        Icon(Icons.remove_red_eye_outlined,
+                            color: Colors.white),
                         SizedBox(
                           width: 25,
                         ),
-                        Icon(Icons.contact_support_outlined, color: Colors.white),
+                        Icon(Icons.contact_support_outlined,
+                            color: Colors.white),
                         SizedBox(
                           width: 25,
                         ),
@@ -59,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                       top: 20,
                     ),
                     child: Text(
-                      'Olá, Lucasasdasd',
+                      'Olá, Lucas',
                       style: TextStyle(
                           color: Colors.white,
                           fontSize: 17,
@@ -74,16 +80,39 @@ class _HomePageState extends State<HomePage> {
             ),
             Column(
               children: [
-                Container(color: Colors.white, child: Column(
-                  children: [
-                    AccountPage(),
-                    SizedBox(height: 10,),
-
-                  ],
-                ),),
-SizedBox(height: 10,),
-Investments(),
-                SizedBox(height: 10,),
+                Container(
+                  color: Colors.white,
+                  child: Column(
+                    children: [
+                      SingleChildScrollView(
+                        scrollDirection: Axis.horizontal,
+                        child: Row(
+                          children: [
+                            CircleButton('Área Pix',
+                            icon: BootstrapIcons.music_note,),
+                            SizedBox(width:15),
+                            CircleButton(
+                              'Pagar', icon: Icons.refresh
+                            ),
+                            SizedBox(width: 15,),
+                            CircleButton('Transferir', icon: Icons.refresh),
+                            SizedBox(width: 15,),
+                            CircleButton('Depositar', icon: Icons.refresh),
+                            SizedBox(width: 15,),
+                            CircleButton('Recarga de\ncelular', icon: Icons.refresh),
+                          ],
+                        ),
+                      ),
+                      SizedBox(
+                        height: 10,
+                      ),
+                    ],
+                  ),
+                ),
+                Investments(),
+                SizedBox(
+                  height: 10,
+                ),
                 Insurance(),
               ],
             ),
@@ -93,4 +122,3 @@ Investments(),
     );
   }
 }
-

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/designer/purple_button.dart';
 
 class  Insurance extends StatelessWidget {
   const Insurance ({Key? key}) : super(key: key);
