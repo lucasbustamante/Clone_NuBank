@@ -1,11 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/designer/bootstrap_icons.dart';
-import 'package:nubank/designer/card.dart';
 import 'package:nubank/designer/circle_button.dart';
 import 'package:nubank/src/investments.dart';
 import 'package:nubank/src/insurance.dart';
-import 'account_page.dart';
-
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -86,25 +83,44 @@ class _HomePageState extends State<HomePage> {
                     children: [
                       SingleChildScrollView(
                         scrollDirection: Axis.horizontal,
-                        child: Row(
-                          children: [
-                            CircleButton('Área Pix',
-                            icon: BootstrapIcons.music_note,),
-                            SizedBox(width:15),
-                            CircleButton(
-                              'Pagar', icon: Icons.refresh
-                            ),
-                            SizedBox(width: 15,),
-                            CircleButton('Transferir', icon: Icons.refresh),
-                            SizedBox(width: 15,),
-                            CircleButton('Depositar', icon: Icons.refresh),
-                            SizedBox(width: 15,),
-                            CircleButton('Recarga de\ncelular', icon: Icons.refresh),
-                          ],
+                        child: Padding(
+                          padding: const EdgeInsets.only(
+                              left: 30, right: 30, top: 25),
+                          child: Row(
+                            children: [
+                              CircleButton(
+                                'Área Pix',
+                                icon: BootstrapIcons.music_note,
+                              ),
+                              CircleButton('Pagar', icon: Icons.refresh),
+                              CircleButton('Transferir', icon: Icons.refresh),
+                              CircleButton('Depositar', icon: Icons.refresh),
+                              CircleButton('Recarga de celular',
+                                  icon: Icons.refresh),
+                              CircleButton('Cobrar', icon: Icons.refresh),
+                              CircleButton('Transferir Internac.'),
+                              Stack(children: [
+                                CircleButton('Encontrar atalhos'),
+                                Padding(
+                                  padding:
+                                      const EdgeInsets.only(top: 45, left: 28),
+                                  child: Container(
+                                    child: Center(
+                                        child: Text('Dica',
+                                            style: TextStyle(
+                                                color: Colors.white,
+                                                fontWeight: FontWeight.w500))),
+                                    decoration: BoxDecoration(
+                                        color: Color(0xff830ad1),
+                                        borderRadius: BorderRadius.circular(5)),
+                                    height: 22,
+                                    width: 35,
+                                  ),
+                                )
+                              ])
+                            ],
+                          ),
                         ),
-                      ),
-                      SizedBox(
-                        height: 10,
                       ),
                     ],
                   ),
