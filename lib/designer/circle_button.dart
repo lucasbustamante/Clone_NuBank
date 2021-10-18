@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:nubank/designer/colors.dart';
 
 class CircleButton extends StatelessWidget {
   final String text;
@@ -15,7 +16,7 @@ class CircleButton extends StatelessWidget {
             height: 70,
             width: 70,
             decoration:
-                BoxDecoration(shape: BoxShape.circle, color: Color(0xfff0f1f5)),
+                BoxDecoration(shape: BoxShape.circle, color: aBackgroundColor),
             child: Icon(icon),
           ),
           SizedBox(

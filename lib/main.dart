@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'src/home_page.dart';
+import 'package:nubank/src/home_page.dart';
+
 
 void main() {
   runApp(MyApp());
@@ -13,9 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: HomePage(),
       debugShowCheckedModeBanner: false,
-      theme: ThemeData(
-        primaryColor: Color(0xff830ad1),
-      ),
+      theme: ThemeData(),
     );
   }
 }
