@@ -16,7 +16,7 @@ class ValueCard extends StatelessWidget {
           children: [
             Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-                Text('Conta', style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20)),
+                Text('Conta', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
                 Row(children: [
                   Icon(Icons.arrow_forward_ios_rounded, color: Colors.grey,
                   size: 20,)
