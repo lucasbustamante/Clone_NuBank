@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:nubank/designer/card.dart';
 import 'package:nubank/designer/circle_button.dart';
 import 'package:nubank/designer/colors.dart';
+import 'package:nubank/designer/screens/my_cards.dart';
 import 'package:nubank/designer/screens/profile.dart';
 import 'package:nubank/designer/value_card.dart';
 
@@ -56,6 +57,7 @@ class _HomePageState extends State<HomePage> {
                   ],
                 ),
               )),
+          MyCards(),
           Cards('Investimentos',icon: Icons.refresh,
             text: 'A revolução roxa começou. Invista de maneira\nsimples,'
                 ' sem burocracias e 100% digital',),
