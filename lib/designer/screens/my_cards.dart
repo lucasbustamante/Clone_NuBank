@@ -11,16 +11,20 @@ class MyCards extends StatelessWidget {
       color: aContainerColor,
       child: Column(
         children: [
-          Container(
-              child: Row(
-                children: [
-                  Icon(Icons.credit_card_outlined),
-                  Text('Meus Cartões')
-                ],
-              ),
-              height: 55, width: 340,
-          decoration: BoxDecoration(color: aBackgroundColor,
-              borderRadius: BorderRadius.circular(10))),
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20),
+            child: Container(
+                child: Row(
+                  children: [SizedBox(width: 15,),
+                    Icon(Icons.credit_card_outlined),
+                    SizedBox(width: 15,),
+                    Text('Meus Cartões',style: TextStyle(fontWeight: FontWeight.w600))
+                  ],
+                ),
+                height: 55, width: 340,
+            decoration: BoxDecoration(color: aBackgroundColor,
+                borderRadius: BorderRadius.circular(15))),
+          ),
 
         ],
       ),

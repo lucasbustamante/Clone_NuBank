@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:nubank/src/home_page.dart';
+import 'package:nubank/designer/screens/home_page.dart';
 
 
 void main() {
