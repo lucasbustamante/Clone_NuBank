@@ -22,6 +22,7 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: aBackgroundColor,
       body: SingleChildScrollView(
+        physics: BouncingScrollPhysics(),
         child: Column(
           children: [
             Profile(),
@@ -31,6 +32,7 @@ class _HomePageState extends State<HomePage> {
                 color: aContainerColor,
                 child: SingleChildScrollView(
                   scrollDirection: Axis.horizontal,
+                  physics: BouncingScrollPhysics(),
                   child: Row(
                     children: [
                       CircleButton('Área Pix', icon: Icons.api,),
@@ -50,8 +52,10 @@ class _HomePageState extends State<HomePage> {
             Cards('Seguro de vida', text: 'Conheça Nubank vida: um seguro simples e que\n'
                 'cabe no bolso. ', icon: Icons.volunteer_activism,),
             SizedBox(height: 3,),
-            Cards('Conhecer mais'),
-            OtherCards(),
+            Cards('Conhecer mais',),
+            OtherCards('Função débito', text: 'Você no controle das suas compras do\n'
+                'dia a dia de um jeito fácil e\ntransparente.',
+            tag: 'Ativar débito',),
           ],
         ),
       ),
