@@ -1,5 +1,3 @@
 # nubank
 
-Clone de interface NuBank.
-
-teste
+Clone de interface Nubank
