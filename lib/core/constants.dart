@@ -1,2 +1,2 @@
 const Username = 'Lucas';
-const Value = '985.580,00';
+const Value = '600.554.842,00';

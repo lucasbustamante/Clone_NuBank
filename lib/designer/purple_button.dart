@@ -1,36 +1,17 @@
 import 'package:flutter/material.dart';
 
-class PurpleButton extends StatelessWidget {
-  final String text;
+import 'colors.dart';
 
-  PurpleButton(this.text);
+class PurpleButton extends StatelessWidget {
+  final String value;
+
+  PurpleButton(this.value);
 
   @override
   Widget build(BuildContext context) {
-    return Align(
-      alignment: Alignment.topLeft,
-      child: GestureDetector(
-        onTap: () {},
-        child: Column(
-          children: [
-            Container(
-              height: 45,
-              width: 130,
-              decoration: BoxDecoration(
-                color: Color(0xff830ad1),
-                borderRadius: BorderRadius.circular(40),
-              ),
-              child: Center(
-                  child: Text(text,
-                      style: TextStyle(
-                          fontSize: 17,
-                          fontWeight: FontWeight.bold,
-                          color: Colors.white))),
-            ),
-            SizedBox(height: 20),
-          ],
-        ),
-      ),
-    );
+    return Chip(backgroundColor: aPrimaryColor,
+        padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
+        label: Text(value, style: TextStyle(fontWeight: FontWeight.w500,
+            color: aContainerColor, fontSize: 18),));
   }
 }

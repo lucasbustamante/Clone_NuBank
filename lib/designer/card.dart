@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nubank/designer/colors.dart';
+import 'package:nubank/designer/purple_button.dart';
 
 class Cards extends StatelessWidget {
   final IconData? icon;
   final String title;
   final String? text;
-  final String? tags;
+  final String? button;
 
-  Cards (this.title,  {this.text, this.icon,this.tags});
+  Cards (this.title,  {this.text, this.icon,this.button});
 
   @override
   Widget build(BuildContext context) {
@@ -35,14 +36,8 @@ class Cards extends StatelessWidget {
               Text(text!,style: TextStyle(color: aSecondaryTextColor, fontWeight:
               FontWeight.w500, fontSize: 14)),
             SizedBox(height: 25,),
-            if (tags!= null)
-              Container(
-              height: 40, width: 120,
-              decoration: BoxDecoration(color: aPrimaryColor,
-              borderRadius: BorderRadius.circular(40)),
-              child: Center(child: Text(tags!, style: TextStyle(
-                color: aContainerColor, fontSize: 17, fontWeight: FontWeight.w500
-              ),)),),
+            if (button!= null)
+              PurpleButton('Conhecer'),
             SizedBox(height: 25,),
           ],
         ),
