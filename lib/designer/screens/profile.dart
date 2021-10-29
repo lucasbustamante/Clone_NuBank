@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/core/constants.dart';
+import 'package:nubank/designer/colors.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
@@ -11,7 +12,7 @@ class Profile extends StatelessWidget {
           Container(
             width: MediaQuery.of(context).size.width,
               height: 160,
-              color: Color(0xff830ad1),
+              color: aPrimaryColor,
             child: Padding(
               padding: const EdgeInsets.only(left: 15, right: 5, top: 40),
               child: Column(crossAxisAlignment: CrossAxisAlignment.start,
