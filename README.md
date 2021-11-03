@@ -11,6 +11,6 @@ Projeto para recriar interface e pequenas funções do APP Nubank
 
 Screenshots da tela inicial
 
-![img.png](img.png)
-C:\Users\lucas\Dropbox\Ponte\aplicativos\Clone_NuBank\screenshot\home2.png
-screenshot/home2.png
+<p float="left">
+  <img src="/screenshots/home1.png" width="250" />
+  <img src="/screenshots/home2.png" width="250" />
