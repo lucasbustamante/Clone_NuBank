@@ -1,13 +1,14 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
+import 'package:nubank/core/route.dart';
 import 'package:nubank/designer/circle_button.dart';
-import 'package:nubank/designer/colors.dart';
-import 'package:nubank/designer/screens/my_cards.dart';
-import 'package:nubank/designer/screens/profile.dart';
+import 'package:nubank/core/colors.dart';
+import 'package:nubank/designer/main_card.dart';
+import 'package:nubank/designer/other_cards.dart';
+import 'package:nubank/designer/my_cards.dart';
+import 'package:nubank/designer/profile.dart';
 import 'package:nubank/designer/value_card.dart';
-import 'package:nubank/src/teste.dart';
-import '../main_card.dart';
-import '../other_cards.dart';
+import 'package:nubank/screens/area_pix.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -36,7 +37,7 @@ class _HomePageState extends State<HomePage> {
               Container(color: aContainerColor,
                 child: Column(
                   children: [
-                    ValueCard(),
+                    ValueCard(onTap: (){},),
                     Container(
                         width: MediaQuery.of(context).size.width,
                         color: aContainerColor,
@@ -47,9 +48,8 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               CircleButton(
                                 'Área Pix',
-                                icon: Icons.api, onTap: () {
-                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Test()));
-                              }
+                                icon: Icons.api, onTap: () =>
+                                  MyRouter.showBottomSheet(context, AreaPix())
                               ),
                               CircleButton('Pagar', icon: Icons.wysiwyg,
                               onTap:(){}),

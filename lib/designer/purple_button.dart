@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'colors.dart';
+import '../core/colors.dart';
 
 class PurpleButton extends StatelessWidget {
   final String value;

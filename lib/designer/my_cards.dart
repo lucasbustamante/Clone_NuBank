@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/core/colors.dart';
 
-import '../colors.dart';
 
 class MyCards extends StatelessWidget {
   const MyCards({Key? key}) : super(key: key);

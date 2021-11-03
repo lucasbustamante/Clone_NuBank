@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:nubank/designer/colors.dart';
+import 'package:nubank/core/colors.dart';
 
 class CircleButton extends StatelessWidget {
   final String text;

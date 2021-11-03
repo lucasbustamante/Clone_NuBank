@@ -1,7 +1,7 @@
-import 'package:flutter/cupertino.dart';
+
 import 'package:flutter/material.dart';
 import 'package:nubank/designer/card.dart';
-import 'package:nubank/designer/colors.dart';
+import 'package:nubank/core/colors.dart';
 
 class MainCard extends StatelessWidget {
   const MainCard({Key? key}) : super(key: key);

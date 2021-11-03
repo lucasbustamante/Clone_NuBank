@@ -2,7 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:nubank/designer/purple_button.dart';
 
-import 'colors.dart';
+import '../core/colors.dart';
 
 class OtherCards extends StatelessWidget {
   final String title;

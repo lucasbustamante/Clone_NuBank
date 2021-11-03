@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:nubank/core/constants.dart';
-import 'package:nubank/designer/colors.dart';
+import 'package:nubank/core/colors.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);
