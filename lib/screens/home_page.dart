@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nubank/core/route.dart';
+import 'package:nubank/designer/account_value.dart';
 import 'package:nubank/designer/circle_button.dart';
 import 'package:nubank/core/colors.dart';
 import 'package:nubank/designer/main_card.dart';
@@ -37,7 +38,7 @@ class _HomePageState extends State<HomePage> {
               Container(color: aContainerColor,
                 child: Column(
                   children: [
-                    ValueCard(onTap: (){},),
+                    ValueCard(onTap: () => MyRouter.showBottomSheet(context, AccountValue()),),
                     Container(
                         width: MediaQuery.of(context).size.width,
                         color: aContainerColor,
