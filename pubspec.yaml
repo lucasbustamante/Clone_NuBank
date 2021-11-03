@@ -25,6 +25,7 @@ dependencies:
     sdk: flutter
   flutter_screenutil: ^0.4.6
   bootstrap_icons: ^1.5.0
+  page_transition: ^2.0.4
 
 
 

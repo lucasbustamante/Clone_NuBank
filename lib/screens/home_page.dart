@@ -10,6 +10,7 @@ import 'package:nubank/designer/my_cards.dart';
 import 'package:nubank/designer/profile.dart';
 import 'package:nubank/designer/value_card.dart';
 import 'package:nubank/screens/area_pix.dart';
+import 'package:page_transition/page_transition.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -38,7 +39,12 @@ class _HomePageState extends State<HomePage> {
               Container(color: aContainerColor,
                 child: Column(
                   children: [
-                    ValueCard(onTap: () => MyRouter.showBottomSheet(context, AccountValue()),),
+                    ValueCard(onTap: ()=> Navigator.push(
+                        context,
+                        PageTransition(
+                            type: PageTransitionType.rightToLeft,
+                            duration: Duration(milliseconds: 300),
+                            child: AccountValue())),),
                     Container(
                         width: MediaQuery.of(context).size.width,
                         color: aContainerColor,
