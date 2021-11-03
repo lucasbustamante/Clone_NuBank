@@ -5,6 +5,7 @@ import 'package:nubank/designer/colors.dart';
 import 'package:nubank/designer/screens/my_cards.dart';
 import 'package:nubank/designer/screens/profile.dart';
 import 'package:nubank/designer/value_card.dart';
+import 'package:nubank/src/teste.dart';
 import '../main_card.dart';
 import '../other_cards.dart';
 
@@ -46,18 +47,26 @@ class _HomePageState extends State<HomePage> {
                             children: [
                               CircleButton(
                                 'Área Pix',
-                                icon: Icons.api,
+                                icon: Icons.api, onTap: () {
+                                  Navigator.of(context).push(MaterialPageRoute(builder: (context) => Test()));
+                              }
                               ),
-                              CircleButton('Pagar', icon: Icons.wysiwyg),
-                              CircleButton('Transferir', icon: Icons.arrow_circle_up),
-                              CircleButton('Depositar', icon: Icons.arrow_circle_down),
+                              CircleButton('Pagar', icon: Icons.wysiwyg,
+                              onTap:(){}),
+                              CircleButton('Transferir', icon: Icons.arrow_circle_up,
+                              onTap:() {}),
+                              CircleButton('Depositar', icon: Icons.arrow_circle_down,
+                              onTap:(){}),
                               CircleButton('Recarga de celular',
-                                  icon: Icons.settings_cell),
+                                  icon: Icons.settings_cell, onTap: (){}),
                               CircleButton('Transferir Internac.',
-                                  icon: Icons.arrow_circle_up_outlined),
+                                  icon: Icons.arrow_circle_up_outlined,
+                              onTap:(){}),
                               CircleButton(
                                 'Encotrar atalhos',
                                 tag: 'Dica',
+                                icon: Icons.wifi_tethering,
+                                onTap: (){}
                               ),
                             ],
                           ),

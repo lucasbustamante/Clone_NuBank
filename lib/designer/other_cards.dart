@@ -13,7 +13,7 @@ class OtherCards extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 195,
+    return Container(height: 220,
       margin: const EdgeInsets.only(right: 20),
       width: 270, decoration: BoxDecoration(
         color: aBackgroundColor,
