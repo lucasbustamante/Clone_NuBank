@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:nubank/core/route.dart';
-import 'package:nubank/designer/account_value.dart';
+import 'package:nubank/screens/account_value.dart';
 import 'package:nubank/designer/circle_button.dart';
 import 'package:nubank/core/colors.dart';
 import 'package:nubank/designer/main_card.dart';
