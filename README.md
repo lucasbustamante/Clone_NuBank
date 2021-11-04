@@ -5,11 +5,11 @@
 
 ## Introdução
 
-Projeto para recriar interface e pequenas funções do APP Nubank
+Projeto para recriar interface e pequenas funções do APP Nubank.
 
 ## Home
 
-Screenshots da tela inicial
+Screenshots da tela inicial.
 
 <p float="left">
   <img src="/screenshots/home1.png" width="250" />
