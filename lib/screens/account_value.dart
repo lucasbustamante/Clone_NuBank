@@ -30,12 +30,28 @@ class AccountValue extends StatelessWidget {
           Row(children: [
             Icon(Icons.account_balance),
             SizedBox(width: 15),
-            Column(mainAxisAlignment: MainAxisAlignment.spaceAround,
-              children: [Text('Dinheiro guardado', style: TextStyle(color: aSecondaryTextColor,)),
-              Text('R\$ 0,00',style: TextStyle(fontWeight: FontWeight.w500))],),
-            Container(child: Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,),)
+            Column(crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text('Dinheiro guardado', style: TextStyle(color: aSecondaryTextColor,)),
+              Text('R\$ $Savings',style: TextStyle(fontWeight: FontWeight.bold,
+              fontSize: 17))],),
+            Container(
+              child: Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,),)
         ],
       ),
+          SizedBox(height: 40),
+          Row(
+            children: [
+              Icon(Icons.add_chart),
+              SizedBox(width: 10,),
+              Column(children: [
+                Text('Rendimento total da conta', style: TextStyle(color:
+                aSecondaryTextColor,)),
+                Text('+R\$ $Income', style: (TextStyle(color: aValueColor,
+                fontSize: 18, fontWeight: FontWeight.bold)),)
+              ],)
+            ],
+          )
     ])
     ));
 
