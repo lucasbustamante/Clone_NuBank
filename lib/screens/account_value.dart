@@ -30,39 +30,43 @@ class AccountValue extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 40)),
                   SizedBox(height: 50,),
-                  Row(
+                  Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                    Icon(Icons.account_balance),
-                    SizedBox(width: 15),
-                    Column(crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Text('Dinheiro guardado', style: TextStyle(color: aSecondaryTextColor,)),
-                        Text('R\$ $Savings',style: TextStyle(fontWeight: FontWeight.bold,
-                            fontSize: 17))],),
-                    Row(
-                      children: [
-                        Container(
-                          child: Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,
-                          size: 17,),),
+                    Row(children: [
+                      Icon(Icons.account_balance),
+                      SizedBox(width: 15),
+                      Column(crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          Text('Dinheiro guardado', style: TextStyle(color: aSecondaryTextColor,)),
+                          Text('R\$ $Savings',style: TextStyle(fontWeight: FontWeight.bold,
+                              fontSize: 17))],),
+
                       ],
-                    )
+                    ),
+                      Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,
+                        size: 17,)
                   ],
                   ),
                   SizedBox(height: 40),
-                  Row(
+                  Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
-                      Icon(Icons.add_chart),
-                      SizedBox(width: 10,),
-                      Column(crossAxisAlignment: CrossAxisAlignment.start,
+                      Row(
                         children: [
-                          Text('Rendimento total da conta', style: TextStyle(color:
-                          aSecondaryTextColor,)),
-                          Text('+R\$ $Income', style: (TextStyle(color: aValueColor,
-                              fontSize: 18, fontWeight: FontWeight.bold)),),
+                          Icon(Icons.add_chart),
+                          SizedBox(width: 10,),
+                          Column(crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Rendimento total da conta', style: TextStyle(color:
+                              aSecondaryTextColor,)),
+                              Text('+R\$ $Income', style: (TextStyle(color: aValueColor,
+                                  fontSize: 18, fontWeight: FontWeight.bold)),),
 
-                        ],),
+                            ],),
+
+                        ],
+                      ),
                       Icon(Icons.arrow_forward_ios_sharp, color: aSecondaryTextColor,
-                      size: 17,)
+                        size: 17,)
                     ],
                   ),
                   SizedBox(height: 30),],
@@ -71,16 +75,19 @@ class AccountValue extends StatelessWidget {
             SingleChildScrollView(
               scrollDirection: Axis.horizontal,
               physics: BouncingScrollPhysics(),
-              child: Row(
-                children: [
-                  CircleButton('Função Débito',
-                  icon: Icons.smartphone,),
-                  CircleButton('Depositar', icon: Icons.arrow_circle_down ),
-                  CircleButton('Pagar', icon: Icons.wysiwyg), 
-                  CircleButton('Transferir', icon: Icons.arrow_circle_up),
-                  CircleButton('Pedir Extrato', icon: Icons.ad_units_sharp),
-                  CircleButton('Cobrar', icon: Icons.account_balance_wallet_outlined)
-                ],
+              child: Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: Row(
+                  children: [
+                    CircleButton('Função Débito',
+                    icon: Icons.smartphone,),
+                    CircleButton('Depositar', icon: Icons.arrow_circle_down ),
+                    CircleButton('Pagar', icon: Icons.wysiwyg),
+                    CircleButton('Transferir', icon: Icons.arrow_circle_up),
+                    CircleButton('Pedir Extrato', icon: Icons.ad_units_sharp),
+                    CircleButton('Cobrar', icon: Icons.account_balance_wallet_outlined)
+                  ],
+                ),
               ),
             ),
             SizedBox(height: 20,),
