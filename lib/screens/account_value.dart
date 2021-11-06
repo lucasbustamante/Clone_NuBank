@@ -30,7 +30,8 @@ class AccountValue extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.bold, fontSize: 40)),
                   SizedBox(height: 50,),
-                  Row(children: [
+                  Row(
+                    children: [
                     Icon(Icons.account_balance),
                     SizedBox(width: 15),
                     Column(crossAxisAlignment: CrossAxisAlignment.start,
@@ -38,9 +39,13 @@ class AccountValue extends StatelessWidget {
                         Text('Dinheiro guardado', style: TextStyle(color: aSecondaryTextColor,)),
                         Text('R\$ $Savings',style: TextStyle(fontWeight: FontWeight.bold,
                             fontSize: 17))],),
-                    Container(
-                      child: Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,
-                      size: 17,),)
+                    Row(
+                      children: [
+                        Container(
+                          child: Icon(Icons.arrow_forward_ios_rounded, color: aSecondaryTextColor,
+                          size: 17,),),
+                      ],
+                    )
                   ],
                   ),
                   SizedBox(height: 40),

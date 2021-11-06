@@ -23,10 +23,10 @@ class ValueCard extends StatelessWidget {
               Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Text('Conta', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
-                  Row(children: [
+                  Container(child:
                     Icon(Icons.arrow_forward_ios_rounded, color: Colors.grey,
                     size: 20,)
-                  ],)
+                  )
                 ],
               ),
               SizedBox(height: 15),
