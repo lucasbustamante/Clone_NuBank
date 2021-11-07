@@ -1,0 +1,64 @@
+import 'package:flutter/material.dart';
+import 'package:nubank/core/colors.dart';
+
+class Historic extends StatelessWidget {
+  const Historic({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+
+    var color = aBackgroundColor;
+    var icon = Icons.arrow_circle_up;
+    var iconcolor = aTextColor;
+
+    return Container(
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20,
+            vertical: 20),
+            child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  children: [
+                    Container(
+                      child: Icon(icon, color: iconcolor),
+                      height: 50, width: 50,
+                    decoration: BoxDecoration(color: color,
+                        borderRadius: BorderRadius.circular(40)),),
+
+                    SizedBox(
+                      width: 15,
+                    ),
+                    Column(crossAxisAlignment: CrossAxisAlignment.start,
+                      children: [
+
+                        Row(
+                          children: [
+                            Text('Transferência enviada', style: TextStyle(
+                              fontWeight: FontWeight.bold, fontSize: 16
+                            ),
+                            ),
+
+                          ],
+                        ),
+                        SizedBox(height: 10),
+                        Text('Claudia Gomes da Costa'),
+                        SizedBox(height: 8),
+                        Text('R\$ 100,00')
+                      ],
+                    )
+                  ],
+                ),
+                Text('16 SET'),
+              ],
+
+            ),
+          ),
+          Divider(thickness: 1)
+        ],
+      ),
+    );
+  }
+}

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:nubank/core/colors.dart';
 import 'package:nubank/core/constants.dart';
 import 'package:nubank/designer/circle_button.dart';
+import 'package:nubank/designer/historic.dart';
 
 
 class AccountValue extends StatelessWidget {
@@ -90,8 +91,8 @@ class AccountValue extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(height: 20,),
-            Divider(thickness: 2,),
+            SizedBox(height: 20),
+            Divider(thickness: 1),
             SizedBox(height: 30),
             Padding(
               padding: const EdgeInsets.only(left: 20, right: 20),
@@ -112,7 +113,9 @@ class AccountValue extends StatelessWidget {
                   )
                 ),)
               ],),
-            )
+            ),
+            Historic(),
+            Historic()
       ]),
     )
     );
