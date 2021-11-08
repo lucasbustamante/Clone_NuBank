@@ -18,4 +18,4 @@ Screenshots da tela inicial.
 
 ## Gif
 <p float="left">
-    <img src="/screenshots/gif.gif" width=""250" />
+    <img src="/screenshots/gif.gif" width="250" />
