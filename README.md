@@ -17,5 +17,5 @@ Screenshots da tela inicial.
   <img src="/screenshots/home2.png" width="250" />
 
 ## Gif
-<p float="left">
+<p float="topcenter">
     <img src="/screenshots/gif.gif" width="250" />
