@@ -1,10 +1,12 @@
 const Username = 'Lucas';
-const Value = '2.000,00';
+const Value = '102.037,92';
 const Value2 = '347,54';
 const Value3 = '17,35';
+const Value4 = '170,92';
 const Savings = '130,00';
 const Income = '0,00';
 const Name = 'Claudia Gomes da Costa';
 const Name2 = 'Bruna Olivatto de Araujo';
-const Day = '23 JUl';
+const Day = '23 JUL';
 const Day2 = '31 JAN';
+const Day3 = '06 JUL';

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:nubank/core/route.dart';
 import 'package:nubank/screens/account_value.dart';
@@ -24,27 +23,31 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: aBackgroundColor,
-      body: Container(decoration: BoxDecoration(
-        gradient: LinearGradient(begin: Alignment.topCenter,
-            end: Alignment.bottomCenter,
-          colors:[aPrimaryColor, Colors.white],
-          stops: [0.5,0.5],
-        )
-      ),
+      body: Container(
+        decoration: BoxDecoration(
+            gradient: LinearGradient(
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+          colors: [aPrimaryColor, Colors.white],
+          stops: [0.5, 0.5],
+        )),
         child: SingleChildScrollView(
           physics: BouncingScrollPhysics(),
           child: Column(
             children: [
               Profile(),
-              Container(color: aContainerColor,
+              Container(
+                color: aContainerColor,
                 child: Column(
                   children: [
-                    ValueCard(onTap: ()=> Navigator.push(
-                        context,
-                        PageTransition(
-                            type: PageTransitionType.rightToLeft,
-                            duration: Duration(milliseconds: 300),
-                            child: AccountValue())),),
+                    ValueCard(
+                      onTap: () => Navigator.push(
+                          context,
+                          PageTransition(
+                              type: PageTransitionType.rightToLeft,
+                              duration: Duration(milliseconds: 300),
+                              child: AccountValue())),
+                    ),
                     Container(
                         width: MediaQuery.of(context).size.width,
                         color: aContainerColor,
@@ -53,28 +56,25 @@ class _HomePageState extends State<HomePage> {
                           scrollDirection: Axis.horizontal,
                           child: Row(
                             children: [
-                              CircleButton(
-                                'Área Pix',
-                                icon: Icons.api, onTap: () =>
-                                  MyRouter.showBottomSheet(context, AreaPix())
-                              ),
-                              CircleButton('Pagar', icon: Icons.wysiwyg,
-                              onTap:(){}),
-                              CircleButton('Transferir', icon: Icons.arrow_circle_up,
-                              onTap:() {}),
-                              CircleButton('Depositar', icon: Icons.arrow_circle_down,
-                              onTap:(){}),
+                              CircleButton('Área Pix',
+                                  icon: Icons.api,
+                                  onTap: () => MyRouter.showBottomSheet(
+                                      context, AreaPix())),
+                              CircleButton('Pagar',
+                                  icon: Icons.wysiwyg, onTap: () {}),
+                              CircleButton('Transferir',
+                                  icon: Icons.arrow_circle_up, onTap: () {}),
+                              CircleButton('Depositar',
+                                  icon: Icons.arrow_circle_down, onTap: () {}),
                               CircleButton('Recarga de celular',
-                                  icon: Icons.settings_cell, onTap: (){}),
+                                  icon: Icons.settings_cell, onTap: () {}),
                               CircleButton('Transferir Internac.',
                                   icon: Icons.arrow_circle_up_outlined,
-                              onTap:(){}),
-                              CircleButton(
-                                'Encotrar atalhos',
-                                tag: 'Dica',
-                                icon: Icons.wifi_tethering,
-                                onTap: (){}
-                              ),
+                                  onTap: () {}),
+                              CircleButton('Encotrar atalhos',
+                                  tag: 'Dica',
+                                  icon: Icons.wifi_tethering,
+                                  onTap: () {}),
                             ],
                           ),
                         )),
@@ -105,21 +105,23 @@ class _HomePageState extends State<HomePage> {
                                 OtherCards('Função débito',
                                     text:
                                         'Você no controle das suas compras do\n'
-                                            'dia a dia de um jeito fácil e\ntransparente',
+                                        'dia a dia de um jeito fácil e\ntransparente',
                                     tag: 'Ativar débito'),
                                 OtherCards('Indique seus amigos',
                                     text:
-                                    'Mostre aos seus amigos como é fácil ter uma vida sem burocracia',
+                                        'Mostre aos seus amigos como é fácil ter uma vida sem burocracia',
                                     tag: 'Indicar amigos'),
                                 OtherCards('WhatsApp',
                                     text:
-                                    'Pagamentos seguros, rápidos e sem tarifa. '
+                                        'Pagamentos seguros, rápidos e sem tarifa. '
                                         'A experiência Nubank sem nem sair da conversa.',
                                     tag: 'Quero conhecer'),
                               ]),
                             ),
                           ),
-                          SizedBox(height: 10,)
+                          SizedBox(
+                            height: 10,
+                          )
                         ],
                       ),
                     ),

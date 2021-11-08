@@ -9,25 +9,33 @@ class OtherCards extends StatelessWidget {
   final String? text;
   final String? tag;
 
-  OtherCards (this.title, {this.text, this.tag});
+  OtherCards(this.title, {this.text, this.tag});
 
   @override
   Widget build(BuildContext context) {
-    return Container(height: 220,
+    return Container(
+      height: 220,
       margin: const EdgeInsets.only(right: 20),
-      width: 270, decoration: BoxDecoration(
+      width: 270,
+      decoration: BoxDecoration(
         color: aBackgroundColor,
-        borderRadius:
-    BorderRadius.circular(20),
-    ),
+        borderRadius: BorderRadius.circular(20),
+      ),
       child: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 25),
-        child: Column(crossAxisAlignment: CrossAxisAlignment.start,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            Text(title, style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20)),
-            SizedBox(height: 10,),
+            Text(title,
+                style: TextStyle(fontWeight: FontWeight.w500, fontSize: 20)),
+            SizedBox(
+              height: 10,
+            ),
             Text(text!),
-              SizedBox(height: 20,),
+            SizedBox(
+              height: 20,
+            ),
             PurpleButton(tag!)
           ],
         ),
