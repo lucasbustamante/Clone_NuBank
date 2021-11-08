@@ -2,7 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:nubank/core/colors.dart';
 
 class Historic extends StatelessWidget {
-  const Historic({Key? key}) : super(key: key);
+  final String title;
+  final String name;
+  final String value;
+  final String day;
+
+  Historic(this.title,this.name,this.value, this.day);
 
   @override
   Widget build(BuildContext context) {
@@ -22,6 +27,7 @@ class Historic extends StatelessWidget {
               children: [
                 Row(
                   children: [
+
                     Container(
                       child: Icon(icon, color: iconcolor),
                       height: 50, width: 50,
@@ -33,10 +39,9 @@ class Historic extends StatelessWidget {
                     ),
                     Column(crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-
                         Row(
                           children: [
-                            Text('Transferência enviada', style: TextStyle(
+                            Text(title, style: TextStyle(
                               fontWeight: FontWeight.bold, fontSize: 16
                             ),
                             ),
@@ -44,21 +49,23 @@ class Historic extends StatelessWidget {
                           ],
                         ),
                         SizedBox(height: 10),
-                        Text('Claudia Gomes da Costa'),
+                        Text(name),
                         SizedBox(height: 8),
-                        Text('R\$ 100,00')
+                        Text('R\$ $value')
                       ],
                     )
                   ],
                 ),
-                Text('16 SET'),
+                Text(day),
               ],
 
             ),
           ),
-          Divider(thickness: 1)
+          Divider(thickness: 1),
+
         ],
       ),
+
     );
   }
 }

@@ -114,8 +114,9 @@ class AccountValue extends StatelessWidget {
                 ),)
               ],),
             ),
-            Historic(),
-            Historic()
+            Historic('Transferência enviada',
+            Name, Value2, Day2),
+
       ]),
     )
     );
