@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nubank/screens/gif_animation.dart';
 import 'package:nubank/screens/home_page.dart';
 
 void main() {
