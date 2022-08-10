@@ -3,6 +3,7 @@
 * [Introdução](#Introdução)
 * [Home](#Home)
 * [Gif](#Gif)
+* [Download](Baixe-o-APK)
 
 ## Introdução
 
@@ -22,3 +23,6 @@ Screenshots da tela inicial.
 ## Gif
 <p float="left">
     <img src="/screenshots/gif.gif" width="250" />
+
+## Baixe o APK
+[Clique aqui para baixar o aplicativo para Android](https://github.com/LucasBustamante/Clone_NuBank/raw/master/app-release.apk)
