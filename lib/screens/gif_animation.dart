@@ -23,7 +23,7 @@ class _GifAnimationState extends State<GifAnimation> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: aPrimaryColor,
+      color: kPrimaryColor,
       child: Column(mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset("assets/gif.gif",

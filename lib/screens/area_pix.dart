@@ -19,11 +19,11 @@ class AreaPix extends StatelessWidget {
                   onPressed: () => MyRouter.popPage(context),
                   icon: Icon(
                     Icons.close_sharp,
-                    color: aSecondaryTextColor,
+                    color: kSecondaryTextColor,
                   )),
               IconButton(
                   onPressed: () {},
-                  icon: Icon(Icons.help_outline, color: aSecondaryTextColor))
+                  icon: Icon(Icons.help_outline, color: kSecondaryTextColor))
             ],
           ),
           Padding(
@@ -42,7 +42,7 @@ class AreaPix extends StatelessWidget {
                       style: TextStyle(
                           fontWeight: FontWeight.w400,
                           fontSize: 17,
-                          color: aSecondaryTextColor),
+                          color: kSecondaryTextColor),
                     ),
                   ),
                   SizedBox(
@@ -51,7 +51,7 @@ class AreaPix extends StatelessWidget {
                   Text('Enviar',
                       style: TextStyle(
                           fontSize: 25,
-                          color: aTextColor,
+                          color: kTextColor,
                           fontWeight: FontWeight.w500)),
                   SizedBox(
                     height: 10,
@@ -79,7 +79,7 @@ class AreaPix extends StatelessWidget {
                   Text('Receber',
                       style: TextStyle(
                           fontSize: 25,
-                          color: aTextColor,
+                          color: kTextColor,
                           fontWeight: FontWeight.w500)),
                   SizedBox(
                     height: 15,
@@ -122,9 +122,9 @@ class AreaPix extends StatelessWidget {
                       Text(
                           'Registre uma nova chave ou faça uma\n'
                           'portabilidade para o Nubank',
-                          style: TextStyle(color: aSecondaryTextColor)),
+                          style: TextStyle(color: kSecondaryTextColor)),
                       Icon(Icons.arrow_forward_ios_rounded,
-                          color: aSecondaryTextColor)
+                          color: kSecondaryTextColor)
                     ],
                   )
                 ],
@@ -151,9 +151,9 @@ class AreaPix extends StatelessWidget {
                           Text(
                               'Gerencie seu limite diário de transferência ou\n'
                               'suas chaves Pix.',
-                              style: TextStyle(color: aSecondaryTextColor)),
+                              style: TextStyle(color: kSecondaryTextColor)),
                           Icon(Icons.arrow_forward_ios_rounded,
-                              color: aSecondaryTextColor)
+                              color: kSecondaryTextColor)
                         ],
                       )
                     ],

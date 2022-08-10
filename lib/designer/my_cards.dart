@@ -8,7 +8,7 @@ class MyCards extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      color: aContainerColor,
+      color: kContainerColor,
       child: Column(
         children: [
           Padding(
@@ -30,7 +30,7 @@ class MyCards extends StatelessWidget {
                 height: 55,
                 width: 340,
                 decoration: BoxDecoration(
-                    color: aBackgroundColor,
+                    color: kBackgroundColor,
                     borderRadius: BorderRadius.circular(15))),
           ),
         ],

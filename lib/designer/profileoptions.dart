@@ -12,7 +12,7 @@ class ProfileOptions extends StatelessWidget {
     return Column(
       children: [
         Container(
-          color: aContainerColor,
+          color: kContainerColor,
           width: MediaQuery.of(context).size.width,
           height: 70,
           child: Padding(
@@ -33,7 +33,7 @@ class ProfileOptions extends StatelessWidget {
                 ),
                 Icon(
                   Icons.arrow_forward_ios_rounded,
-                  color: aSecondaryTextColor,
+                  color: kSecondaryTextColor,
                   size: 17,
                 ),
               ],

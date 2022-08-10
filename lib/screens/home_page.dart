@@ -22,13 +22,13 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: aBackgroundColor,
+      backgroundColor: kBackgroundColor,
       body: Container(
         decoration: BoxDecoration(
             gradient: LinearGradient(
           begin: Alignment.topCenter,
           end: Alignment.bottomCenter,
-          colors: [aPrimaryColor, Colors.white],
+          colors: [kPrimaryColor, Colors.white],
           stops: [0.5, 0.5],
         )),
         child: SingleChildScrollView(
@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Profile(),
               Container(
-                color: aContainerColor,
+                color: kContainerColor,
                 child: Column(
                   children: [
                     ValueCard(
@@ -50,7 +50,7 @@ class _HomePageState extends State<HomePage> {
                     ),
                     Container(
                         width: MediaQuery.of(context).size.width,
-                        color: aContainerColor,
+                        color: kContainerColor,
                         child: SingleChildScrollView(
                           physics: BouncingScrollPhysics(),
                           scrollDirection: Axis.horizontal,
@@ -82,7 +82,7 @@ class _HomePageState extends State<HomePage> {
                     MainCard(),
                     Container(
                       width: MediaQuery.of(context).size.width,
-                      color: aContainerColor,
+                      color: kContainerColor,
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [

@@ -10,13 +10,13 @@ class PurpleButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Chip(
-        backgroundColor: aPrimaryColor,
+        backgroundColor: kPrimaryColor,
         padding: EdgeInsets.symmetric(horizontal: 15, vertical: 10),
         label: Text(
           value,
           style: TextStyle(
               fontWeight: FontWeight.w500,
-              color: aContainerColor,
+              color: kContainerColor,
               fontSize: 18),
         ));
   }

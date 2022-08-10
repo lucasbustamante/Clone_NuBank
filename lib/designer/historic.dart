@@ -12,14 +12,14 @@ class Historic extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var color = aBackgroundColor;
+    var color = kBackgroundColor;
     var icon = Icons.arrow_circle_up;
-    var iconcolor = aTextColor;
+    var iconcolor = kTextColor;
 
     if (title == 'Transferência recebida') {
       icon = Icons.arrow_circle_down;
-      color = aCircleColor;
-      iconcolor = aValueColor;
+      color = kCircleColor;
+      iconcolor = kValueColor;
     }
 
     return Container(
@@ -58,20 +58,20 @@ class Historic extends StatelessWidget {
                         ),
                         SizedBox(height: 10),
                         Text(name,
-                            style: TextStyle(color: aSecondaryTextColor)),
+                            style: TextStyle(color: kSecondaryTextColor)),
                         SizedBox(height: 8),
                         Text('R\$ $value',
-                            style: TextStyle(color: aSecondaryTextColor)),
+                            style: TextStyle(color: kSecondaryTextColor)),
                         SizedBox(height: 5),
                         Text(
                           pix!,
-                          style: TextStyle(color: aSecondaryTextColor),
+                          style: TextStyle(color: kSecondaryTextColor),
                         )
                       ],
                     )
                   ],
                 ),
-                Text(day, style: TextStyle(color: aSecondaryTextColor)),
+                Text(day, style: TextStyle(color: kSecondaryTextColor)),
               ],
             ),
           ),

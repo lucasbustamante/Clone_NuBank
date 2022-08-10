@@ -18,7 +18,7 @@ class OtherCards extends StatelessWidget {
       margin: const EdgeInsets.only(right: 20),
       width: 270,
       decoration: BoxDecoration(
-        color: aBackgroundColor,
+        color: kBackgroundColor,
         borderRadius: BorderRadius.circular(20),
       ),
       child: Padding(

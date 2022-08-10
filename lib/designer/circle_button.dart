@@ -22,7 +22,7 @@ class CircleButton extends StatelessWidget {
                 height: 70,
                 width: 70,
                 decoration: BoxDecoration(
-                    shape: BoxShape.circle, color: aBackgroundColor),
+                    shape: BoxShape.circle, color: kBackgroundColor),
                 child: Icon(icon),
               ),
               if (tag != null)
@@ -32,13 +32,13 @@ class CircleButton extends StatelessWidget {
                       height: 20,
                       width: 32,
                       decoration: BoxDecoration(
-                        color: aPrimaryColor,
+                        color: kPrimaryColor,
                         borderRadius: BorderRadius.circular(5),
                       ),
                       child: Center(
                           child: Text(tag!,
                               style: TextStyle(
-                                  color: aContainerColor,
+                                  color: kContainerColor,
                                   fontWeight: FontWeight.w500)))),
                 )
             ]),

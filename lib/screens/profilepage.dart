@@ -17,7 +17,7 @@ class ProfilePage extends StatelessWidget {
           gradient: LinearGradient(
         begin: Alignment.topCenter,
         end: Alignment.bottomCenter,
-        colors: [aBackgroundColor, Colors.white],
+        colors: [kBackgroundColor, Colors.white],
         stops: [0.5, 0.5],
       )),
       child: SingleChildScrollView(
@@ -41,7 +41,7 @@ class ProfilePage extends StatelessWidget {
               height: 50,
               width: 300,
               decoration: BoxDecoration(
-                  color: aBackgroundColor,
+                  color: kBackgroundColor,
                   borderRadius: BorderRadius.circular(40)),
               child: Center(
                 child: Text(

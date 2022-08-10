@@ -10,17 +10,17 @@ class AccountValue extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: aContainerColor,
+        backgroundColor: kContainerColor,
         appBar: AppBar(
-          backgroundColor: aContainerColor,
+          backgroundColor: kContainerColor,
           elevation: 0,
-          foregroundColor: aSecondaryTextColor,
+          foregroundColor: kSecondaryTextColor,
           actions: [
             IconButton(
                 onPressed: () {},
                 icon: Icon(
                   Icons.help_outline,
-                  color: aSecondaryTextColor,
+                  color: kSecondaryTextColor,
                 ))
           ],
         ),
@@ -35,7 +35,7 @@ class AccountValue extends StatelessWidget {
                 children: [
                   Text('Saldo disponível',
                       style: TextStyle(
-                          color: aSecondaryTextColor,
+                          color: kSecondaryTextColor,
                           fontWeight: FontWeight.w600,
                           fontSize: 16)),
                   SizedBox(
@@ -59,7 +59,7 @@ class AccountValue extends StatelessWidget {
                             children: [
                               Text('Dinheiro guardado',
                                   style: TextStyle(
-                                    color: aSecondaryTextColor,
+                                    color: kSecondaryTextColor,
                                   )),
                               Text('R\$ $Savings',
                                   style: TextStyle(
@@ -71,7 +71,7 @@ class AccountValue extends StatelessWidget {
                       ),
                       Icon(
                         Icons.arrow_forward_ios_rounded,
-                        color: aSecondaryTextColor,
+                        color: kSecondaryTextColor,
                         size: 17,
                       )
                     ],
@@ -91,12 +91,12 @@ class AccountValue extends StatelessWidget {
                             children: [
                               Text('Rendimento total da conta',
                                   style: TextStyle(
-                                    color: aSecondaryTextColor,
+                                    color: kSecondaryTextColor,
                                   )),
                               Text(
                                 '+R\$ $Income',
                                 style: (TextStyle(
-                                    color: aValueColor,
+                                    color: kValueColor,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold)),
                               ),
@@ -106,7 +106,7 @@ class AccountValue extends StatelessWidget {
                       ),
                       Icon(
                         Icons.arrow_forward_ios_sharp,
-                        color: aSecondaryTextColor,
+                        color: kSecondaryTextColor,
                         size: 17,
                       )
                     ],
@@ -150,11 +150,11 @@ class AccountValue extends StatelessWidget {
                   SizedBox(height: 40),
                   TextField(
                     style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                    cursorColor: aPrimaryColor,
+                    cursorColor: kPrimaryColor,
                     decoration: InputDecoration(
                         prefixIcon: Icon(Icons.search),
                         hintText: 'Buscar',
-                        fillColor: aBackgroundColor,
+                        fillColor: kBackgroundColor,
                         filled: true,
                         border: OutlineInputBorder(
                             borderSide: BorderSide.none,

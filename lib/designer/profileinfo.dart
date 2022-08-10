@@ -10,7 +10,7 @@ class ProfileInfo extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: MediaQuery.of(context).size.width,
-      color: aBackgroundColor,
+      color: kBackgroundColor,
       child: Padding(
         padding: const EdgeInsets.only(top: 30, left: 20),
         child: Column(
@@ -20,7 +20,7 @@ class ProfileInfo extends StatelessWidget {
                 onPressed: () => MyRouter.popPage(context),
                 icon: Icon(
                   Icons.close_sharp,
-                  color: aSecondaryTextColor,
+                  color: kSecondaryTextColor,
                 )),
             SizedBox(height: 20),
             Row(
@@ -29,11 +29,11 @@ class ProfileInfo extends StatelessWidget {
                     height: 50,
                     width: 50,
                     decoration: BoxDecoration(
-                        color: aPrimaryColor,
+                        color: kPrimaryColor,
                         borderRadius: BorderRadius.circular(40)),
                     child: Icon(
                       Icons.perm_identity_rounded,
-                      color: aContainerColor,
+                      color: kContainerColor,
                     )),
                 SizedBox(width: 15),
                 Text(

@@ -8,7 +8,7 @@ class MainCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: aBackgroundColor,
+      color: kBackgroundColor,
       child: Column(
         children: [
           Cards('Investimentos',

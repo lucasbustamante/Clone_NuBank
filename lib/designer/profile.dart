@@ -14,7 +14,7 @@ class Profile extends StatelessWidget {
         Container(
           width: MediaQuery.of(context).size.width,
           height: 160,
-          color: aPrimaryColor,
+          color: kPrimaryColor,
           child: Padding(
             padding: const EdgeInsets.only(left: 15, right: 5, top: 40),
             child: Column(
