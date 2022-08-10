@@ -3,7 +3,7 @@
 * [Introdução](#Introdução)
 * [Home](#Home)
 * [Gif](#Gif)
-* [Download](Baixe-o-APK)
+* [Download](#Baixe-o-APK)
 
 ## Introdução
 
